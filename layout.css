@@ -1,0 +1,48 @@
+/* ref: http://inder.com.tw/learn-bootstrap-4-grid/ */
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.row {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.col {
+  width: 100%;
+  float: left;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+
+/* 3/10 */
+.col10-3 {
+  width: 30%;
+  float: left;
+  padding: 0 5px;
+  box-sizing: border-box;
+}
+/* 7/10 */
+.col10-7 {
+  width: 70%;
+  float: left;
+  padding: 0 5px;
+  box-sizing: border-box;
+}

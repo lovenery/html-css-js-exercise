@@ -1,0 +1,46 @@
+body {
+  background-color: rgba(65, 199, 162, 0.15);
+}
+.content {
+  padding:2em;
+  background-color: rgba(65, 199, 162, 0.6);
+  border-radius: 0.5em;
+}
+
+.img-box {
+  /* 排版 */
+  display: inline-block;
+  margin: 0.2em;
+  padding: 2em;
+
+  width: 15vw;
+  background-color: #424242;
+  border-radius: 0.5em;
+}
+img {
+  /* rwd img*/
+  max-width: 100%;
+  height: auto;
+  display:block;
+
+  border-radius: 0.5em;
+}
+.btn {
+  border-radius: 0.5em;
+  background-color: #111111;
+  color: #fff;
+
+  display: inline-block;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-group {
+  background-color: #313131;
+  padding: 1em;
+  margin-top: 1em;
+}
+footer {
+  text-align: right; /* 文字像右對齊 */
+  color: #8f94a1; /* FB灰字 */
+  font-size: 75%; /* 我的預設是20px */
+}

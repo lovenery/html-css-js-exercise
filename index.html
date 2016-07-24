@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Feed Cat</title>
+    <link rel="stylesheet" href="layout.css" media="screen">
+    <link rel="stylesheet" href="style.css" media="screen">
+    <style media="screen">
+        /* 變大特效, use in script.js */
+        @keyframes bigger {
+            from {transform: scale(1.0);}
+            to {transform: scale(1.1);}
+        }
+    </style>
+    <script src="script.js"></script>
+  </head>
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col10-3">
+      <div class="content">
+        <h2>Feed me by id</h2>
+        <input type="radio" id="all" onclick="radio_all(this)"> All<br>
+        <input type="radio" value="cat1" onclick="radio_name(this)"> aa<br>
+        <input type="radio" value="cat2" onclick="radio_name(this)"> bb<br>
+        <input type="radio" value="cat3" onclick="radio_name(this)"> cc<br>
+        <input type="radio" value="cat4" onclick="radio_name(this)"> dd<br>
+        <input type="radio" value="cat5" onclick="radio_name(this)"> ee<br>
+
+        <h3>Feed me by class</h3>
+        <input type="text" name="name" value="" placeholder="">
+        <br><br>
+        <button class="btn" onclick="feed()">Feed</button>
+      </div>
+    </div>
+    <div class="col10-7">
+      <div class="content">
+        <h2>Cat Album</h2>
+        <div class="img-box">
+          <img id="cat1" class="AAA" src="cat1.jpg" onmousedown="catdown(this)" onmouseup="catup(this)"  />
+          <div class="btn-group">
+            <button class="btn" type="button" name="button">aa</button>
+            &nbsp;
+            <button class="btn" type="button" name="button">AAA</button>
+          </div>
+        </div>
+        <div class="img-box">
+          <img id="cat2" class="AAA" src="cat2.jpg" onmousedown="catdown(this)" onmouseup="catup(this)"  />
+          <div class="btn-group">
+            <button class="btn" type="button" name="button">bb</button>
+            &nbsp;
+            <button class="btn" type="button" name="button">AAA</button>
+          </div>
+        </div>
+        <div class="img-box">
+          <img id="cat3" class="AAA" src="cat3.jpg" onmousedown="catdown(this)" onmouseup="catup(this)"  />
+          <div class="btn-group">
+            <button class="btn" type="button" name="button">cc</button>
+            &nbsp;
+            <button class="btn" type="button" name="button">AAA</button>
+          </div>
+        </div>
+        <div class="img-box">
+          <img id="cat4" class="CCC" src="cat4.jpg" onmousedown="catdown(this)" onmouseup="catup(this)"  />
+          <div class="btn-group">
+            <button class="btn" type="button" name="button">dd</button>
+            &nbsp;
+            <button class="btn" type="button" name="button">CCC</button>
+          </div>
+        </div>
+        <div class="img-box">
+          <img id="cat5" class="BBB" src="cat5.jpg" onmousedown="catdown(this)" onmouseup="catup(this)"  />
+          <div class="btn-group">
+            <button class="btn" type="button" name="button">ee</button>
+            &nbsp;
+            <button class="btn" type="button" name="button">BBB</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <footer class="col">
+      Hsu writed at 2016/07/25
+    </footer>
+  </div>
+
+</div>
+
+</body>
+</html>
